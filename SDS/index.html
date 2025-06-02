@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spring Decomposed Skinning</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/noto-serif-sc" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/br-cobane" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/plush-trial" rel="stylesheet">
+                
+                
+</head>
+<body>
+
+  <h1><center>Real-Time Secondary Animation with Spring Decomposed Skinning</center></h1>
+
+  <div class="authors">
+	<br>
+    <center>
+	<table>
+		<tbody>
+			<tr>
+				<td valign="top">
+					<center><a href="https://bartuakyurek.github.io/about/">Bartu Akyürek</a></center>
+					<center>
+						<p>Middle East Technical University</p>
+					</center>
+				</td>
+				<td width="30">&nbsp;</td>
+				<td valign="top">
+					<center><a href="https://user.ceng.metu.edu.tr/~ys/">Yusuf Sahillioğlu</a></center>
+					<center>
+						<p>Middle East Technical University</p>
+					</center>
+				</td>
+				<td width="30">&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+	</center>
+    <br>
+  </div>
+
+  <div class="links">
+    <a href="Spring_Decomposed_Skinning.pdf" target="_blank">📄 Paper (Preprint)</a>
+    <a href="https://github.com/bartuakyurek/Spring-Decomposed-Skinning" target="_blank">💻 Code</a>
+    
+    <!--<a href="code.zip" download>💻 Code</a> -->
+   <!-- <a href="link_here..." target="_blank">ArXiv</a> -->
+  </div>
+
+  <img src="teaser.png" alt="Teaser Image" class="teaser">
+
+  <h2>Abstract</h2>
+  <p>
+    We present a framework to integrate secondary motion into the existing animation pipelines. Skinning provides fast computation for real-time animation and intuitive control over the deformation. Despite the benefits, traditional skinning methods lack secondary dynamics such as the jiggling of fat tissues. We address the rigidity of skinning methods by physically simulating the deformation handles with spring forces. Most studies introduce secondary motion into skinning by employing FEM simulation on volumetric mesh vertices, coupling their computational complexity with mesh resolution. Unlike these approaches, we do not require any volumetric mesh input. Our method scales to higher mesh resolutions by directly simulating deformation handles. The simulated handles, namely the spring bones, enrich rigid skinning deformation with a diverse range of secondary animation for subjects including rigid bodies, elastic bodies, soft tissues, and cloth simulation. In essence, we leverage the benefits of physical simulations in the scope of deformation handles to achieve controllable real-time dynamics on a wide range of subjects while remaining compatible with existing skinning pipelines. Our method avoids tetrahedral remeshing and it is significantly faster compared to FEM-based volumetric mesh simulations.
+  </p>
+
+  <h2>Video</h2>
+  <!-- YouTube embed -->
+  <iframe src="https://www.youtube.com/watch?v=T-N8L80AB8U" frameborder="0" allowfullscreen></iframe>
+
+  <!-- Local video -->
+  <h2>Fast Forward</h2>
+  <video controls>
+    <source src="fast_forward.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <h2 id="acknowledgements">Acknowledgements</h2>
+  <p>We thank the anonymous reviewers for their constructive comments. This work was supported by TUBITAK under the project
+    EEEAG-124E183.</p>
+  
+  <h2 id="citation">BibTeX</h3>
+  <div align="left" class="code-container">
+      <code>
+        TBA
+      </code>
+  </div>
+
+</body>
+</html>
